@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MoviesAgainPop</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_ShowbyPopularity">Sort by Popularity</string>
+    <string name="action_ShowbyHighestRated">Sort by Ratings</string>
+    <string name="title_activity_movie_details">MovieDetails</string>
+
+
+</resources>
