@@ -3,10 +3,14 @@
     android:id="@+id/gridview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:columnWidth="100dp"
+
 android:fitsSystemWindows="true"
-    android:numColumns="2"
+
+    android:numColumns="auto_fit"
+    android:stretchMode="columnWidth"
+    android:columnWidth="130dp"
+
     android:verticalSpacing="1dp"
     android:horizontalSpacing="1dp"
-    android:stretchMode="columnWidth"
+
     android:gravity="center" />

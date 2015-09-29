@@ -96,7 +96,11 @@ private String[] mStringURI;
         }
 
         public int getCount() {
-            return mStringURI.length;
+            if(mStringURI!=null)
+                return mStringURI.length;
+            else
+                return 0;
+            //return mStringURI.length;
         }
 
         public Object getItem(int position) {
@@ -117,7 +121,7 @@ public void add(String[] s)
             if (convertView == null) {
                 // if it's not recycled, initialize some attributes
                 imageView = new ImageView(mContext);
-imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                imageView.setScaleType(ImageView.ScaleType.FIT_XY);
                 //imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
               //  imageView.setScaleType(ImageView.ScaleType.);
                 //imageView.setPadding(8, 8, 8, 8);

@@ -25,8 +25,13 @@ public class MovieDetails extends ActionBarActivity {
         ImageView ImgView=(ImageView) findViewById(R.id.imgMoviePoster);
         ImgView.setScaleType(ImageView.ScaleType.FIT_XY);
         Picasso.with(this).load("http://image.tmdb.org/t/p/w185/"+message.split(" && ")[0]).into(ImgView);
-        TextView txtView1=(TextView) findViewById(R.id.txtView_Rele);
-        txtView1.setText(message.split(" && ")[4].split("-")[0]+"\n"+message.split(" && ")[4]+"\n"+message.split(" && ")[3]);
+        TextView txtView1=(TextView) findViewById(R.id.txtView_ReleseYear);
+        txtView1.setText(message.split(" && ")[4].split("-")[0]);
+        TextView txtView3=(TextView) findViewById(R.id.txtView_ReleaseDate);
+        txtView3.setText("Release Date: "+message.split(" && ")[4]);
+        TextView txtView4=(TextView) findViewById(R.id.txtView_VoteAverage);
+        txtView4.setText("Vote Average: "+message.split(" && ")[3]+"/10");
+        //txtView1.setText(message.split(" && ")[4].split("-")[0]+"\n"+message.split(" && ")[4]+"\n"+message.split(" && ")[3]);
         TextView txtView2=(TextView) findViewById(R.id.txtView_Desc);
         txtView2.setText(message.split(" && ")[1]);
         //setContentView(R.layout.activity_movie_details);
